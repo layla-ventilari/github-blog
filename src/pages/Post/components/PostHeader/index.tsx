@@ -4,17 +4,29 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faCalendar, faComment, faChevronLeft } from "@fortawesome/free-solid-svg-icons"
 import { useNavigate } from "react-router-dom";
+import { IPost } from "../../../Blog";
+import { Spinner } from "../../../../components/Spinner";
+import { relativeDateFomatter } from "../../../../utils/fomatter";
 
+interface PostHeaderProps{
+  postData:IPost;
+  isLoading:boolean;
+}
 
-export function PostHeader(){
+export function PostHeader({ postData, isLoading }: PostHeaderProps) {
   const navigate = useNavigate();
 
   function goBack(){
     navigate( -1);
   }
   
+  const formattedDate= relativeDateFomatter(postData?.created_at)
   return(
     <PostHeaderContainer>
+        {isLoading ? (
+        <Spinner />
+      ) : (
+        <>
       <header>
         <ExternalLink 
         as="button" 
@@ -23,23 +35,25 @@ export function PostHeader(){
         text="voltar"
         variant="iconLeft"
         />
-        <ExternalLink text="Ver no Github" href="#" target="_blank"/>
+        <ExternalLink text="Ver no Github" href={postData.html_url} target="_blank"/>
       </header>
-      <h1>JavaScript data and data structures</h1>
+      <h1>{postData.title}</h1>
       <ul>
         <li>
           <FontAwesomeIcon icon={faGithub}/>
-          adsdsdd
+         {postData.user.login}
         </li>
         <li>
           <FontAwesomeIcon icon={faCalendar}/>
-          Há 1 dia
+         {formattedDate}
         </li>
         <li>
           <FontAwesomeIcon icon={faComment}/>
-          5 comentários
+          {postData.comments}
         </li>
       </ul>
+      </>
+      )}
     </PostHeaderContainer>
-  )
+  );
 }

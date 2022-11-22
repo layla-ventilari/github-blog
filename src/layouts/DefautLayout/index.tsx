@@ -10,6 +10,5 @@ export function DefaultLayout(){
        <Outlet /> 
       </main>
     </LayoutContainer>
-
-  )
+  );
 }

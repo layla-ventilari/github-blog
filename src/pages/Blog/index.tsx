@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { Spinner } from "../../components/Spinner";
 import { api } from "../../lib/axios";
 import { Post } from "./components/Post";
 import { Profile } from "./components/Profile";
@@ -14,6 +15,7 @@ export interface IPost {
   created_at: string;
   number: number;
   comments: number;
+  html_url: string;
   user: {
     login: string;
   };
@@ -24,14 +26,14 @@ export function Blog(){
   const [ isLoading, setIsLoading] = useState(true);
 
 
-  const getPosts = useCallback(async ( query: string ="") => {
+  const getPosts = useCallback(
+    async ( query: string ="") => {
     try {
       setIsLoading(true);
       const response = await api.get(
         `/search/issues?q=${query}%20repo:${username}/${repoName}`
       );
         
-        console.log(response.data)
         setPosts(response.data.items);
     } finally {
       setIsLoading(false);
@@ -46,14 +48,18 @@ export function Blog(){
   return(
    <>
       <Profile />
-      <SearchInput />
+      <SearchInput postsLength={posts.length} getPosts={getPosts}/>
+     {isLoading ? (
+      <Spinner />
+     ):(
       <PostListContainer>
-        {posts.map((post) =>(
-         <Post 
-         key={post.number} post={post}/> 
-        ))}
-        
-      </PostListContainer>
+      {posts.map((post) =>(
+       <Post 
+       key={post.number} post={post}/> 
+      ))}
+      
+    </PostListContainer>
+     )}
    </>
   
   );

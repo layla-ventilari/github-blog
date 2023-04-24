@@ -7,8 +7,9 @@ GitHub API
 React Router
 React Markdown
 Styled Components
-Funcionalidades
-Visualização de posts
+
+
+## Visualização de posts
 Os visitantes do blog podem visualizar os posts disponíveis na página inicial. Cada post é representado por um cartão que exibe o título, a data de criação e um resumo do conteúdo. Ao clicar em um post, o visitante é redirecionado para a página de detalhes, onde o conteúdo completo é exibido.
 
 ## Comentários

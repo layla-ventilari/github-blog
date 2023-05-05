@@ -18,23 +18,4 @@ Os visitantes também podem comentar sobre os posts. Os comentários são exibid
 ## Atualização de posts
 O blog é atualizado através de issues no GitHub. Cada post é representado por uma issue e o conteúdo é escrito em Markdown. Quando uma nova issue é criada, o blog é atualizado automaticamente para exibir o novo post.
 
-**Como executar a aplicação**
-Para executar a aplicação, é necessário ter o NodeJS instalado. Em seguida, execute os seguintes comandos:
-
-bash
-Copy code
-# Clone o repositório
-$ git clone https://github.com/seu-usuario/meu-blog.git
-
-# Entre na pasta do projeto
-$ cd meu-blog
-
-# Instale as dependências
-$ npm install
-
-# Inicie a aplicação
-$ npm start
-A aplicação estará disponível em https://github-blog-ten-zeta.vercel.app/
-
-**Conclusão**
-O blog é uma aplicação web simples e fácil de usar, que permite que qualquer pessoa publique e compartilhe seus pensamentos e ideias. Ao utilizar a API do GitHub, o blog é atualizado automaticamente, tornando o processo de publicação ainda mais fácil e eficiente. Sinta-se à vontade para visitar o blog e deixar um comentário ou sugestão!
+**O blog é uma aplicação web simples e fácil de usar, que permite que qualquer pessoa publique e compartilhe seus pensamentos e ideias. Ao utilizar a API do GitHub, o blog é atualizado automaticamente, tornando o processo de publicação ainda mais fácil e eficiente. Sinta-se à vontade para visitar o blog e deixar um comentário ou sugestão!**

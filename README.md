@@ -1,5 +1,8 @@
-# Github blog 
+#  📚 Github blog  📚
  Uma aplicação web em ReactJS que utiliza a API do GitHub para buscar as postagens e atualizar a página. O blog é aberto ao público e permite que os visitantes visualizem os posts e comentem sobre eles.
+ 
+ ![Screenshot from 2023-05-05 19-08-40](https://user-images.githubusercontent.com/99200113/236587358-dd66faa2-d49e-489b-a6bb-eda3b19f27df.png)
+
 
 ## Tecnologias utilizadas
 ReactJS

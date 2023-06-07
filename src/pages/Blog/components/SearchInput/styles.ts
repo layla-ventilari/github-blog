@@ -15,7 +15,7 @@ export const SearchInputContainer = styled.form `
 
 h3 {
   font-size: ${({ theme}) => theme.textSizes["text-text-s"]};
-  color: ${({theme}) => theme.colors["base-span"]};
+  color: ${({theme}) => theme.colors["blue-100"]};
  }
 }
 
@@ -23,18 +23,18 @@ input {
   width: 100%;
   padding: 0.75rem 1rem;
   border-radius: 6px;
-  background: ${({theme}) => theme.colors["base-input"]};
+  background: ${({theme}) => theme.colors["violet-900"]};
   border: 1px solid ${({theme}) => theme.colors["base-border"]};
-  color: ${({theme}) => theme.colors["base-text"]};
+  color: ${({theme}) => theme.colors["blue-100"]};
   transition: 0.4s;
 
 
 &:focus{
-  border-color: ${({theme}) => theme.colors["brand-blue"]};
+  border-color: ${({theme}) => theme.colors["violet-400"]};
   outline: none;
 }
 &::placeholder{
-  color: ${({theme}) => theme.colors["base-label"]};
+  color: ${({theme}) => theme.colors["blue-400"]};
   }
 }
 `;

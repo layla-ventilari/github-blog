@@ -1,10 +1,13 @@
 import styled from "styled-components";
+import headerBg from "../../../../assets/bg.svg";
+
 
 export const ProfileContainer = styled.section `
 width: 100%;
 min-height: 13.25rem;
 margin-top: -5.5rem;
-background: ${({ theme}) => theme.colors["base-profile"]};
+background: url(${headerBg}) no-repeat center; 
+background-size: cover;
 box-shadow: 0px 2px 28px rgba(0,0,0,0.2);
 border-radius: 10px;
 padding: 2rem 2.5rem;
@@ -32,7 +35,7 @@ header {
 
 h1 {
   font-size: ${({ theme }) => theme.textSizes["title-title-l"]};
-  color: ${({ theme }) => theme.colors["base-title"]};
+  color: ${({ theme }) => theme.colors["blue-100"]};
   line-height: 130%;
   }
 }

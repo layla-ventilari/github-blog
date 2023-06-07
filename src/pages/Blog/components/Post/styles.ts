@@ -5,7 +5,7 @@ export const PostContainer = styled(Link)`
 width: 100%;
 height: 16.25rem;
 border-radius: 10px;
-background: ${({theme}) => theme.colors["base-post"]};
+background: ${({theme}) => theme.colors["violet-900"]};
 border: 2px solid ${({theme}) => theme.colors["base-post"]};
 padding: 2rem;
 transition: 0.4s;
@@ -22,7 +22,7 @@ div{
 strong{
   flex: 1;
   font-size: ${({theme}) => theme.textSizes["title-title-m"]};
-  color: ${({theme}) => theme.colors["base-title"]};
+  color: ${({theme}) => theme.colors["blue-200"]};
  } 
 
  span{

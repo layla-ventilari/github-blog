@@ -8,7 +8,7 @@ export const ExternalLinkContainer = styled.a<ExternalLinkProps>`
   border: none;
   background: none;
   font-size: ${({theme}) => theme.textSizes["components-link"]};
-  color: ${({theme}) => theme.colors["brand-blue"]};
+  color: ${({theme}) => theme.colors["violet-200"]};
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ export const ExternalLinkContainer = styled.a<ExternalLinkProps>`
   }
 
   &:hover {
-    border-color: ${({theme}) => theme.colors["brand-blue"]} 
+    border-color: ${({theme}) => theme.colors["violet-300"]} 
   
   }
   ${({variant}) => variant === 'iconLeft' && css`

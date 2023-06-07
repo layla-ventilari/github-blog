@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import firaCode from "../assets/fonts/FiraCode-Regular.woff";
+import headerBg from "../assets/bg.svg";
+
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {
@@ -24,7 +26,8 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   body {
-    background: ${({ theme }) => theme.colors["base-background"]};
+    background: url(${headerBg}) no-repeat center; 
+    background-size: cover;
     color: ${({ theme }) => theme.colors["base-text"]};
     -webkit-font-smoothing: antialiased;
   }

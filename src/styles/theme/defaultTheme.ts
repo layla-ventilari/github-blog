@@ -16,13 +16,16 @@ export const defaultTheme = {
     "violet-300": "#9179BB",
     "violet-400": "#6E4F9E",
     "violet-500": "#4B257F",
+    "violet-600": "#3D1E68",
+    "violet-700": "#301853",
+    "violet-800": "#230E3D",
+    "violet-900": "#160828",
     "blue-100": "#BFD7EA",
     "blue-200": "#9EC1DC",
     "blue-300": "#7BAACD",
     "blue-400": "#5994BF",
     "blue-500": "#367EA9",
-},
-
+  },
   textSizes: {
     "title-title-l": "1.5rem",
     "title-title-m": "1.25rem",

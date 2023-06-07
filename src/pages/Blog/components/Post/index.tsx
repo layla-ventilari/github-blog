@@ -2,11 +2,13 @@ import { IPost } from "../..";
 import { relativeDateFomatter } from "../../../../utils/fomatter";
 import { PostContainer } from "./styles";
 
-interface PostProps{
+
+interface Props{
   post: IPost;
 }
 
-export function Post({post}: PostProps){
+
+export function Post({post}: Props){
   const formattedDate = relativeDateFomatter(post.created_at)
   return(
     <PostContainer to={`/post/${post.number}`}>

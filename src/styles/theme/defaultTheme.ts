@@ -1,30 +1,30 @@
 export const defaultTheme = {
   colors: {
-    "base-input": "#040F1A",
-    "base-background": "#071422",
-    "base-profile": "#0B1B2B",
-    "base-post": "#112131",
-    "base-border": "#1C2F41",
-    "base-label": "#3A536B",
-    "base-span": "#7B96B2",
-    "base-text": "#AFC2D4",
-    "base-subtitle": "#C4D4E3",
-    "base-title": "#E7EDF4",
-    "brand-blue": "#3294F8",
-    "violet-100": "#D6CDEB",
-    "violet-200": "#B3A3D3",
-    "violet-300": "#9179BB",
-    "violet-400": "#6E4F9E",
-    "violet-500": "#4B257F",
-    "violet-600": "#3D1E68",
-    "violet-700": "#301853",
-    "violet-800": "#230E3D",
-    "violet-900": "#160828",
-    "blue-100": "#BFD7EA",
-    "blue-200": "#9EC1DC",
-    "blue-300": "#7BAACD",
-    "blue-400": "#5994BF",
-    "blue-500": "#367EA9",
+    "base-input": "#F5F6F5", // Cinza claro para inputs
+    "base-background": "#FFFFFF", // Branco puro para fundo
+    "base-profile": "#F0F2F5", // Cinza bem claro para perfis
+    "base-post": "#FAFAFA", // Quase branco para posts
+    "base-border": "#DDE3E8", // Cinza suave para bordas
+    "base-label": "#7A8794", // Cinza médio para labels
+    "base-span": "#5A6876", // Cinza escuro suave para spans
+    "base-text": "#333F4D", // Cinza escuro para texto principal
+    "base-subtitle": "#1F2A38", // Cinza mais escuro para subtítulos
+    "base-title": "#0A1420", // Quase preto para títulos
+    "brand-blue": "#3294F8", // Mantive o azul vibrante como destaque
+    "violet-100": "#ECE6F5", // Violeta claro
+    "violet-200": "#D9CCEB", // Violeta suave
+    "violet-300": "#BFA8DE", // Violeta médio claro
+    "violet-400": "#A483CE", // Violeta médio
+    "violet-500": "#885DBA", // Violeta principal
+    "violet-600": "#704A9E", // Violeta mais escuro
+    "violet-700": "#593B82", // Violeta escuro
+    "violet-800": "#422C66", // Violeta bem escuro
+    "violet-900": "#2B1D4A", // Violeta quase preto
+    "blue-100": "#E6F0FA", // Azul claro
+    "blue-200": "#CCE1F5", // Azul suave
+    "blue-300": "#A3C9EA", // Azul médio claro
+    "blue-400": "#7AB1DF", // Azul médio
+    "blue-500": "#5199D4", // Azul principal
   },
   textSizes: {
     "title-title-l": "1.5rem",

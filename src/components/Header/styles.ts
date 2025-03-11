@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import headerKey from "../../assets/header.svg"
+import headerKey from "../../assets/bg-header.svg"
 export const HeaderContainer = styled.header `
   width: 100%;
   height: 18.5rem;

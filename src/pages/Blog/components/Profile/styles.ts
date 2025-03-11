@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import headerBg from "../../../../assets/bg.svg";
+import headerBg from "../../../../assets/bg-light.svg";
 
 
 export const ProfileContainer = styled.section `

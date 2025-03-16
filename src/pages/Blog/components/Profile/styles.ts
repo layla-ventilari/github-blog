@@ -1,45 +1,42 @@
 import styled from "styled-components";
 
 export const ProfileContainer = styled.section`
-  width: 100vw; /* Largura total da viewport */
-  max-width: 100%; /* Garante que não exceda a tela */
-  padding: 2rem; /* Mantido para espaçamento interno */
-  background: ${({ theme }) => theme.colors["gray-100"]}; /* Apenas cor sólida, sem imagem */
-  border-radius: 1rem; /* Mantido o arredondamento sutil */
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.03); /* Sombra leve */
+  width: 100vw; 
+  max-width: 100%; 
+  padding: 2rem; 
   display: flex;
-  flex-direction: row; /* Explicitamente definido como linha */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente os itens */
-  gap: 2rem; /* Espaçamento entre foto e detalhes */
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+  gap: 2rem; 
 `;
 
 export const ProfilePicture = styled.img`
-  width: 6rem; /* Tamanho mantido */
+  width: 6rem;
   height: 6rem;
-  border-radius: 50%; /* Círculo mantido */
+  border-radius: 50%;
   object-fit: cover;
-  flex-shrink: 0; /* Impede que a imagem encolha */
+  flex-shrink: 0; 
 `;
 
 export const ProfileDetails = styled.div`
-  flex: 1; /* Ocupa o espaço disponível */
+  flex: 1; 
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* Espaçamento vertical entre elementos internos */
+  gap: 1rem;
 
   header {
     display: flex;
-    flex-direction: row; /* Mudado para linha para alinhar h1 e link lado a lado */
-    justify-content: space-between; /* Espalha o h1 e o link */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 0.5rem; /* Espaço entre h1 e link */
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 0.5rem; 
 
     h1 {
       font-size: ${({ theme }) => theme.textSizes["title-title-l"]};
       color: ${({ theme }) => theme.colors["gray-900"]};
       line-height: 130%;
-      margin: 0; /* Remove margens padrão */
+      margin: 0; 
     }
   }
 
@@ -52,11 +49,11 @@ export const ProfileDetails = styled.div`
 
   ul {
     display: flex;
-    flex-direction: row; /* Linha para itens lado a lado */
+    flex-direction: row; 
     align-items: center;
-    gap: 1.5rem; /* Espaçamento entre itens */
-    flex-wrap: wrap; /* Permite quebra de linha se necessário */
-    margin-top: 0.5rem; /* Pequeno espaçamento acima */
+    gap: 1.5rem; 
+    flex-wrap: wrap; 
+    margin-top: 0.5rem; 
   }
 
   li {

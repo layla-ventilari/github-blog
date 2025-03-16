@@ -5,13 +5,13 @@ export const PostContainer = styled(Link)`
   width: 100%;
   height: 16.25rem;
   border-radius: 10px;
-  background: ${({ theme }) => theme.colors["violet-900"]};
-  border: 2px solid ${({ theme }) => theme.colors["base-post"]};
+  background: ${({ theme }) => theme.colors["base-post"]}; // #FAFAFA
+  border: 2px solid ${({ theme }) => theme.colors["base-border"]}; // #DDE3E8
   padding: 2rem;
   transition: 0.4s;
 
   &:hover {
-    border-color: ${({ theme }) => theme.colors["base-label"]};
+    border-color: ${({ theme }) => theme.colors["base-label"]}; // #7A8794
   }
 
   div {
@@ -21,14 +21,14 @@ export const PostContainer = styled(Link)`
 
     strong {
       flex: 1;
-      font-size: ${({ theme }) => theme.textSizes["title-title-m"]};
-      color: ${({ theme }) => theme.colors["blue-200"]};
+      font-size: ${({ theme }) => theme.textSizes["title-title-m"]}; // 1.25rem
+      color: ${({ theme }) => theme.colors["blue-200"]}; // #CCE1F5
     }
 
     span {
       width: max-content;
-      font-size: ${({ theme }) => theme.textSizes["text-text-s"]};
-      color: ${({ theme }) => theme.colors["base-span"]};
+      font-size: ${({ theme }) => theme.textSizes["text-text-s"]}; // 0.875rem
+      color: ${({ theme }) => theme.colors["base-span"]}; // #5A6876
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;

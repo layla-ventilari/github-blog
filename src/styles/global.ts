@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
     
- body {
+  body {
     background: url(${headerBg}) no-repeat center top, ${(props) =>
       props.theme.colors["blue-100"]};
     background-size: 100% auto; 

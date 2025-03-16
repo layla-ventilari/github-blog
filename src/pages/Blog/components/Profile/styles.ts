@@ -3,63 +3,67 @@ import headerBg from "../../../../assets/bg-light.svg";
 
 export const ProfileContainer = styled.section`
   width: 100%;
-  height: 10rem; /* Reduzido de min-height: 13.25rem para uma altura fixa mais compacta */
-  margin-top: -4rem; /* Reduzido de -5.5rem para menos sobreposição */
+  padding: 2rem; /* Ajustado para um padding mais uniforme */
   background: url(${headerBg}) no-repeat center, ${({ theme }) =>
     theme.colors["gray-100"]}; /* Mantido o fundo claro */
   background-size: cover;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.03); /* Sombra mais sutil e clean */
-  border-radius: 1rem; /* Reduzido de 1.6rem para um arredondamento mais sutil */
-  padding: 1.5rem 2rem; /* Reduzido de 2rem 2.5rem para um layout mais compacto */
+  border-radius: 1rem; /* Mantido o arredondamento sutil */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.03); /* Sombra leve */
   display: flex;
-  gap: 1.5rem; /* Reduzido de 2rem para um espaçamento mais enxuto */
+  align-items: center; /* Centraliza verticalmente os itens */
+  gap: 2rem; /* Aumentado de volta para um espaçamento mais generoso */
 `;
 
 export const ProfilePicture = styled.img`
-  width: 7.5rem; /* Reduzido de 9.25rem para um tamanho mais compacto */
-  height: 7.5rem; /* Reduzido de 9.25rem */
-  border-radius: 0.75rem; /* Reduzido de 1rem para um visual mais sutil */
+  width: 6rem; /* Reduzido ainda mais para um tamanho mais elegante */
+  height: 6rem;
+  border-radius: 50%; /* Círculo para um visual moderno de hero */
   object-fit: cover;
-  /* Borda com gradiente removida para um design mais clean */
 `;
 
 export const ProfileDetails = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 1rem; /* Espaçamento interno mais organizado */
 
   header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0.5rem; /* Reduzido de 0.75rem para compactar */
+    flex-direction: column; /* Mudado para coluna para um layout de hero */
+    gap: 0.25rem; /* Espaço menor entre título e subtítulo */
 
     h1 {
-      font-size: ${({ theme }) => theme.textSizes["title-title-m"]}; /* Reduzido de title-l para um tamanho mais discreto */
-      color: ${({ theme }) => theme.colors["gray-900"]}; /* Mantido tema light */
+      font-size: ${({ theme }) => theme.textSizes["title-title-l"]}; /* Aumentado para destacar */
+      color: ${({ theme }) => theme.colors["gray-900"]}; /* Tema light */
       line-height: 130%;
+    }
+
+    p.bio {
+      font-size: ${({ theme }) => theme.textSizes["text-text-m"]};
+      color: ${({ theme }) => theme.colors["gray-600"]}; /* Tom mais suave */
+      line-height: 160%; /* Mais legível */
+      max-width: 80%; /* Limita a largura da bio para não ficar muito espalhado */
     }
   }
 
   ul {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Reduzido de 1.5rem para um layout mais apertado */
+    gap: 1.5rem; /* Aumentado para um visual mais arejado */
     flex-wrap: wrap;
-    margin-top: auto;
   }
 
   li {
     display: flex;
     align-items: center;
-    gap: 0.375rem; /* Reduzido de 0.5rem para um espaçamento mais sutil */
-    color: ${({ theme }) => theme.colors["gray-600"]}; 
-    font-size: ${({ theme }) => theme.textSizes["text-text-s"]}; /* Reduzido de text-m para um texto mais compacto */
+    gap: 0.5rem; /* Aumentado para um espaçamento mais confortável */
+    color: ${({ theme }) => theme.colors["gray-600"]};
+    font-size: ${({ theme }) => theme.textSizes["text-text-m"]}; /* Aumentado para legibilidade */
   }
 
   svg {
-    width: 1rem; /* Reduzido de 1.125rem para ícones menores */
-    height: 1rem;
-    color: ${({ theme }) => theme.colors["gray-600"]}; /* Mantido tema light */
+    width: 1.25rem; /* Aumentado para destacar os ícones */
+    height: 1.25rem;
+    color: ${({ theme }) => theme.colors["gray-600"]};
   }
 `;

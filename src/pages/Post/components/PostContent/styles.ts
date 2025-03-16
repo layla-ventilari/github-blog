@@ -14,7 +14,7 @@ export const PostContentContainer = styled.div `
   h1,
   h2,
   h3{
-    color: ${({theme})=> theme.colors["brand-blue"]} ;
+    color: ${({theme})=> theme.colors["blue-100"]} ;
   }
 
   ul{

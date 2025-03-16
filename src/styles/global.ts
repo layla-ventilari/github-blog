@@ -17,11 +17,10 @@ export const GlobalStyles = createGlobalStyle`
       width: 0.45rem;
     }
     ::-webkit-scrollbar-track {
-      background: ${(props) => props.theme.colors["base-border"]}; // #E0E0E0 (cinza claro)
+      background: ${(props) => props.theme.colors["base-border"]}; 
     }
     ::-webkit-scrollbar-thumb {
-      background: ${(props) => props.theme.colors["brand-blue"]}; // #007BFF (azul vibrante)
-      border-radius: 999px;
+      background: ${(props) => props.theme.colors["brand-blue"]}; 
     }
   }
     
@@ -29,7 +28,7 @@ export const GlobalStyles = createGlobalStyle`
     background: url(${headerBg}) no-repeat center top, ${(props) =>
       props.theme.colors["blue-100"]};
     background-size: 100% auto; 
-    color: ${(props) => props.theme.colors["blue-800"]}; // #333333 (cinza escuro)
+    color: ${(props) => props.theme.colors["blue-800"]}; 
     -webkit-font-smoothing: antialiased;
   }
 

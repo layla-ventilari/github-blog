@@ -37,7 +37,7 @@ li{
   gap: 0.5rem;
   display: flex;
   align-items: center;
-  ${({ theme}) => theme.colors["blue-200"]};
+  ${({ theme}) => theme.colors["base-span"]};
   line-height: 0px;
 
   svg{

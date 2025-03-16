@@ -4,12 +4,12 @@ import headerBg from "../../../../assets/bg-light.svg";
 export const ProfileContainer = styled.section`
   width: 100%;
   min-height: 13.25rem;
-  margin-top: -5.5rem;
+  margin-top: 5rem;
   background: url(${headerBg}) no-repeat center, ${({ theme }) =>
     theme.colors["gray-100"]}; /* Adicionado fundo claro do tema light */
   background-size: cover;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05); /* Sombra mais suave e moderna */
-  border-radius: 1.6rem; /* Arredondamento maior para combinar com o input */
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05); 
+  border-radius: 1.6rem; 
   padding: 2rem 2.5rem;
   display: flex;
   gap: 2rem;

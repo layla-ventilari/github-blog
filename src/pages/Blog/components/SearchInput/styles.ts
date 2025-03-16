@@ -13,25 +13,23 @@ export const SearchInputContainer = styled.form`
 
     h3 {
       font-size: ${({ theme }) => theme.textSizes["text-text-s"]};
-      color: ${({ theme }) => theme.colors["gray-900"]}; // Alterado para tema light
+      color: ${({ theme }) => theme.colors["gray-900"]}; // Mantido do tema light
     }
   }
 
   input {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    background: ${({ theme }) => theme.colors["gray-100"]}; // Alterado para tema light
-    border: 1px solid ${({ theme }) => theme.colors["gray-300"]}; // Alterado para tema light
-    color: ${({ theme }) => theme.colors["gray-900"]}; // Alterado para tema light
-    transition: 0.4s;
-
+    /* O gradiente, borda, radius, fonte e cores já estão no GlobalStyles */
+    padding: 0.75rem 1rem; /* Sobrescreve o padding do global (0.8rem) */
+    transition: 0.4s; /* Mantido do original, adiciona transição */
+    
+    /* Ajustes específicos para o componente */
     &:focus {
-      border-color: ${({ theme }) => theme.colors["gray-500"]}; // Alterado para tema light
-      outline: none;
+      outline: none; /* Mantido do original */
     }
+
     &::placeholder {
-      color: ${({ theme }) => theme.colors["gray-600"]}; // Alterado para tema light
+      /* Já definido como #7f7f7f no global, mas pode ser sobrescrito se necessário */
+      color: ${({ theme }) => theme.colors["gray-600"]}; // Sobrescreve o global com tema light
     }
   }
 `;

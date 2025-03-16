@@ -10,7 +10,6 @@ export const defaultTheme = {
     "base-text": "#333F4D", // Cinza escuro para texto principal
     "base-subtitle": "#1F2A38", // Cinza mais escuro para subtítulos
     "base-title": "#0A1420", // Quase preto para títulos
-    "brand-blue": "#3294F8", // Mantive o azul vibrante como destaque
     "violet-100": "#ECE6F5", // Violeta claro
     "violet-200": "#D9CCEB", // Violeta suave
     "violet-300": "#BFA8DE", // Violeta médio claro
@@ -25,6 +24,10 @@ export const defaultTheme = {
     "blue-300": "#A3C9EA", // Azul médio claro
     "blue-400": "#7AB1DF", // Azul médio
     "blue-500": "#5199D4", // Azul principal
+    "blue-600": "#3E7AB1", // Azul mais escuro
+    "blue-700": "#2B5C8E", // Azul escuro
+    "blue-800": "#193E6B", // Azul bem escuro
+    "brand-blue": "#0D2548", // Azul quase preto
   },
   textSizes: {
     "title-title-l": "1.5rem",

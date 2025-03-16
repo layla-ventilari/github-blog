@@ -17,19 +17,19 @@ export const GlobalStyles = createGlobalStyle`
       width: 0.45rem;
     }
     ::-webkit-scrollbar-track {
-      background: ${(props) => props.theme.colors["base-border"]}; // #DDE3E8 (cinza claro)
+      background: ${(props) => props.theme.colors["base-border"]}; // #E0E0E0 (cinza claro)
     }
     ::-webkit-scrollbar-thumb {
-      background: ${(props) => props.theme.colors["brand-blue"]}; // #3294F8 (azul vibrante)
+      background: ${(props) => props.theme.colors["brand-blue"]}; // #007BFF (azul vibrante)
       border-radius: 999px;
     }
   }
     
  body {
     background: url(${headerBg}) no-repeat center top, ${(props) =>
-      props.theme.colors["base-background"]}; // Fundo branco (#FFFFFF) como fallback
-    background-size: 100% auto; // Ajusta o SVG para caber no topo
-    color: ${(props) => props.theme.colors["base-text"]}; // #333F4D (cinza escuro)
+      props.theme.colors["base-background"]}; // #FFFFFF (branco)
+    background-size: 100% auto; 
+    color: ${(props) => props.theme.colors["base-text"]}; // #333333 (cinza escuro)
     -webkit-font-smoothing: antialiased;
   }
 

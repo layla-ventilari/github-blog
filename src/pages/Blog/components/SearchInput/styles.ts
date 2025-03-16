@@ -34,7 +34,7 @@ input {
   outline: none;
 }
 &::placeholder{
-  color: ${({theme}) => theme.colors["blue-100"]};
+  color: ${({theme}) => theme.colors["blue-500"]};
   }
 }
 `;

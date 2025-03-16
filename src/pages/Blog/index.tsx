@@ -35,6 +35,8 @@ export function Blog(){
       );
         
         setPosts(response.data.items);
+    } catch (error) {
+      console.error("Erro ao buscar posts:", error);
     } finally {
       setIsLoading(false);
     }

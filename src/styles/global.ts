@@ -24,18 +24,21 @@ export const GlobalStyles = createGlobalStyle`
       border-radius: 999px;
     }
   }
-  body {
+    
+ body {
     background: url(${headerBg}) no-repeat center top, ${(props) =>
       props.theme.colors["base-background"]}; // Fundo branco (#FFFFFF) como fallback
     background-size: 100% auto; // Ajusta o SVG para caber no topo
     color: ${(props) => props.theme.colors["base-text"]}; // #333F4D (cinza escuro)
     -webkit-font-smoothing: antialiased;
   }
+
   body, input, textarea, button {
     font: 400 ${(props) =>
       props.theme.textSizes["text-text-m"]} 'Nunito', sans-serif;
     line-height: 160%;
   }
+
   ul {
     list-style: none;
   }

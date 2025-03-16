@@ -3,27 +3,24 @@ import headerBg from "../../../../assets/bg-light.svg";
 
 export const ProfileContainer = styled.section`
   width: 100%;
-  min-height: 13.25rem;
-  margin-top: 5rem;
+  height: 10rem; /* Reduzido de min-height: 13.25rem para uma altura fixa mais compacta */
+  margin-top: -4rem; /* Reduzido de -5.5rem para menos sobreposição */
   background: url(${headerBg}) no-repeat center, ${({ theme }) =>
-    theme.colors["gray-100"]}; /* Adicionado fundo claro do tema light */
+    theme.colors["gray-100"]}; /* Mantido o fundo claro */
   background-size: cover;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05); 
-  border-radius: 1.6rem; 
-  padding: 2rem 2.5rem;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.03); /* Sombra mais sutil e clean */
+  border-radius: 1rem; /* Reduzido de 1.6rem para um arredondamento mais sutil */
+  padding: 1.5rem 2rem; /* Reduzido de 2rem 2.5rem para um layout mais compacto */
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem; /* Reduzido de 2rem para um espaçamento mais enxuto */
 `;
 
 export const ProfilePicture = styled.img`
-  width: 9.25rem;
-  height: 9.25rem;
-  border-radius: 1rem; /* Levemente mais arredondado para consistência */
+  width: 7.5rem; /* Reduzido de 9.25rem para um tamanho mais compacto */
+  height: 7.5rem; /* Reduzido de 9.25rem */
+  border-radius: 0.75rem; /* Reduzido de 1rem para um visual mais sutil */
   object-fit: cover;
-  border: 2px solid transparent; /* Borda sutil com gradiente */
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #337ab7, #28a745);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
+  /* Borda com gradiente removida para um design mais clean */
 `;
 
 export const ProfileDetails = styled.div`
@@ -35,11 +32,11 @@ export const ProfileDetails = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0.75rem; /* Aumentado ligeiramente para espaçamento consistente */
+    margin-bottom: 0.5rem; /* Reduzido de 0.75rem para compactar */
 
     h1 {
-      font-size: ${({ theme }) => theme.textSizes["title-title-l"]};
-      color: ${({ theme }) => theme.colors["gray-900"]}; /* Atualizado para tema light */
+      font-size: ${({ theme }) => theme.textSizes["title-title-m"]}; /* Reduzido de title-l para um tamanho mais discreto */
+      color: ${({ theme }) => theme.colors["gray-900"]}; /* Mantido tema light */
       line-height: 130%;
     }
   }
@@ -47,7 +44,7 @@ export const ProfileDetails = styled.div`
   ul {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem; /* Reduzido de 1.5rem para um layout mais apertado */
     flex-wrap: wrap;
     margin-top: auto;
   }
@@ -55,14 +52,14 @@ export const ProfileDetails = styled.div`
   li {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    color: ${({ theme }) => theme.colors["gray-900"]}; /* Texto mais suave no tema light */
-    font-size: ${({ theme }) => theme.textSizes["text-text-m"]};
+    gap: 0.375rem; /* Reduzido de 0.5rem para um espaçamento mais sutil */
+    color: ${({ theme }) => theme.colors["gray-600"]}; 
+    font-size: ${({ theme }) => theme.textSizes["text-text-s"]}; /* Reduzido de text-m para um texto mais compacto */
   }
 
   svg {
-    width: 1.125rem;
-    height: 1.125rem;
-    color: ${({ theme }) => theme.colors["gray-600"]}; /* Ajustado para tema light */
+    width: 1rem; /* Reduzido de 1.125rem para ícones menores */
+    height: 1rem;
+    color: ${({ theme }) => theme.colors["gray-600"]}; /* Mantido tema light */
   }
 `;

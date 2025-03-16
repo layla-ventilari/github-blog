@@ -27,9 +27,9 @@ export const GlobalStyles = createGlobalStyle`
     
  body {
     background: url(${headerBg}) no-repeat center top, ${(props) =>
-      props.theme.colors["base-background"]}; // #FFFFFF (branco)
+      props.theme.colors["blue-100"]};
     background-size: 100% auto; 
-    color: ${(props) => props.theme.colors["base-text"]}; // #333333 (cinza escuro)
+    color: ${(props) => props.theme.colors["blue-800"]}; // #333333 (cinza escuro)
     -webkit-font-smoothing: antialiased;
   }
 

@@ -7,7 +7,7 @@ export const ProfileContainer = styled.section`
   margin-top: -5.5rem;
   background: url(${headerBg}) no-repeat center;
   background-size: cover;
-  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.03);
   border-radius: 10px;
   padding: 2rem 2.5rem;
   display: flex;

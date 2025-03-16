@@ -7,7 +7,7 @@ min-height: 10.5rem;
 margin-top: -5.5rem;
 background: url(${headerBg}) no-repeat center; 
 background-size: cover;
-box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.3);
 border-radius: 10px;
 padding: 2rem;
 display: flex;
@@ -37,7 +37,7 @@ li{
   gap: 0.5rem;
   display: flex;
   align-items: center;
-  ${({ theme}) => theme.colors["base-span"]};
+  ${({ theme}) => theme.colors["blue-200"]};
   line-height: 0px;
 
   svg{

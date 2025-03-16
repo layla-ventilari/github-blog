@@ -68,7 +68,7 @@ export const GlobalStyles = createGlobalStyle`
 
     &:focus {
       border: solid 1.5px transparent;
-      background-image: linear-gradient(white, white), radial-gradient(circle at top left,rgb(74, 46, 202),rgb(247, 9, 175));
+      background-image: linear-gradient(white, white), radial-gradient(circle at top left,rgb(74, 46, 202),rgb(9, 247, 176));
       background-origin: border-box;
       background-clip: padding-box, border-box;
     }

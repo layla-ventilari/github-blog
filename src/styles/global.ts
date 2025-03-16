@@ -26,7 +26,7 @@ export const GlobalStyles = createGlobalStyle`
     
   body {
     background: url(${headerBg}) no-repeat center top, ${(props) =>
-      props.theme.colors["blue-100"]};
+      props.theme.colors["base-background"]};
     background-size: 100% auto; 
     color: ${(props) => props.theme.colors["blue-800"]}; 
     -webkit-font-smoothing: antialiased;

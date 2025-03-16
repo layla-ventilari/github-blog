@@ -22,13 +22,13 @@ export const PostContainer = styled(Link)`
     strong {
       flex: 1;
       font-size: ${({ theme }) => theme.textSizes["title-title-m"]}; // 1.25rem
-      color: ${({ theme }) => theme.colors["blue-200"]}; // #CCE1F5
+      color: ${({ theme }) => theme.colors["blue-600"]}; // #CCE1F5
     }
 
     span {
       width: max-content;
       font-size: ${({ theme }) => theme.textSizes["text-text-s"]}; // 0.875rem
-      color: ${({ theme }) => theme.colors["base-span"]}; // #5A6876
+      color: ${({ theme }) => theme.colors["base-span"]}; // 
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;

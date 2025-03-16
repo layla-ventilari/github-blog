@@ -16,11 +16,11 @@ export const PostContainer = styled.div`
   flex-direction: column;
   gap: 1rem;
   padding: 1.5rem;
-  background: ${(props) => props.theme.colors["base-post"]}; // #FAFAFA
+  background: ${(props) => props.theme.colors["base-post"]};
   border: 1px solid ${(props) => props.theme.colors["base-border"]}; // #DDE3E8
   border-radius: 8px;
   text-decoration: none;
-  color: ${(props) => props.theme.colors["base-text"]}; // #333F4D
+  color: ${(props) => props.theme.colors["blue-600"]}; 
   transition: background 0.2s ease;
 
   &:hover {
@@ -51,7 +51,7 @@ export const PostContainer = styled.div`
     font-family: "Nunito", sans-serif;
     font-size: ${(props) => props.theme.textSizes["text-text-m"]}; // 1rem
     color: ${(props) => props.theme.colors["base-text"]}; // #333F4D
-    line-height: 1.6; // Alinhado com o global (160%)
+    line-height: 1.6; 
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;

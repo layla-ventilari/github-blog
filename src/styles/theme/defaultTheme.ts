@@ -37,7 +37,16 @@ export const defaultTheme = {
   textSizes: {
     "title-title-l": "1.5rem",
     "title-title-m": "1.25rem",
-    "title-title-s": "1.125rem",
+    "title-title-s": "1.125rem",  "base-title": "#0A1420", // Quase preto para títulos
+    "violet-100": "#ECE6F5", // Violeta claro
+    "violet-200": "#D9CCEB", // Violeta suave
+    "violet-300": "#BFA8DE", // Violeta médio claro
+    "violet-400": "#A483CE", // Violeta médio
+    "violet-500": "#885DBA", // Violeta principal
+    "violet-600": "#704A9E", // Violeta mais escuro
+    "violet-700": "#593B82", // Violeta escuro
+    "violet-800": "#422C66", // Violeta bem escuro
+    "violet-900": "#2B1D4A", // Violeta quase preto
     "text-text-m": "1rem",
     "text-text-s": "0.875rem",
     "components-link": "0.75rem",

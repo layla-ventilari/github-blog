@@ -22,7 +22,7 @@ export const PostContentContainer = styled.div `
     padding-left: 1.5rem;
   }
   pre{
-    background:${({theme})=> theme.colors["base-post"]};
+    background:${({theme})=> theme.colors["blue-100"]} ;
     padding: 1rem;
     > div{
       background: none !important;

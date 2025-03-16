@@ -28,6 +28,11 @@ export const defaultTheme = {
     "blue-700": "#2B5C8E", // Azul escuro
     "blue-800": "#193E6B", // Azul bem escuro
     "brand-blue": "#0D2548", // Azul quase preto
+    "gray-100": "#F5F5F5", // Cinza claro
+    "gray-300": "#E0E0E0", // Cinza suave
+    "gray-500": "#9E9E9E", // Cinza médio
+    "gray-600": "#757575", // Cinza escuro suave
+    "gray-900": "#212121", // Cinza quase preto
   },
   textSizes: {
     "title-title-l": "1.5rem",

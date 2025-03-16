@@ -63,7 +63,7 @@ const getProfileData = useCallback(async () =>{
           </li>
           <li>
             <FontAwesomeIcon icon={faLinkedin}/>
-            layla-ventilari-135574145
+            layla-ventilari
           </li>
         </ul>
       </ProfileDetails>

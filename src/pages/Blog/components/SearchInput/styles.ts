@@ -23,18 +23,18 @@ input {
   width: 100%;
   padding: 0.75rem 1rem;
   border-radius: 6px;
-  background: ${({theme}) => theme.colors["violet-900"]};
+  background: ${({theme}) => theme.colors["blue-100"]};
   border: 1px solid ${({theme}) => theme.colors["base-border"]};
-  color: ${({theme}) => theme.colors["blue-100"]};
+  color: ${({theme}) => theme.colors["blue-600"]};
   transition: 0.4s;
 
 
 &:focus{
-  border-color: ${({theme}) => theme.colors["violet-400"]};
+  border-color: ${({theme}) => theme.colors["blue-300"]};
   outline: none;
 }
 &::placeholder{
-  color: ${({theme}) => theme.colors["blue-400"]};
+  color: ${({theme}) => theme.colors["blue-100"]};
   }
 }
 `;

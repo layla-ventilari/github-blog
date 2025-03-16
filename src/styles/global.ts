@@ -24,13 +24,13 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
     
-  body {
-    background: url(${headerBg}) no-repeat center top, ${(props) =>
-      props.theme.colors["base-background"]};
-    background-size: 100% auto; 
-    color: ${(props) => props.theme.colors["blue-800"]}; 
-    -webkit-font-smoothing: antialiased;
-  }
+body {
+  background: linear-gradient(to bottom, ${({ theme }) =>
+    theme.colors["gray-100"]}, ${({ theme }) =>
+    theme.colors["base-background"]}); /* Gradiente suave */
+  color: ${({ theme }) => theme.colors["blue-800"]};
+  -webkit-font-smoothing: antialiased;
+}
 
   body, input, textarea, button {
     font: 400 ${(props) =>
@@ -49,7 +49,6 @@ export const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
-  /* Estilização direta do input com o gradiente */
   input {
     border-radius: 1.6rem;
     width: 100%;

@@ -8,7 +8,7 @@ export const ExternalLinkContainer = styled.a<ExternalLinkProps>`
   border: none;
   background: none;
   font-size: ${({theme}) => theme.textSizes["components-link"]};
-  color: ${({theme}) => theme.colors["violet-200"]};
+  color: ${({theme}) => theme.colors["blue-200"]};
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -25,11 +25,10 @@ export const ExternalLinkContainer = styled.a<ExternalLinkProps>`
   }
 
   &:hover {
-    border-color: ${({theme}) => theme.colors["violet-300"]} 
-  
+    border-color: ${({theme}) => theme.colors["blue-300"]};
   }
+
   ${({variant}) => variant === 'iconLeft' && css`
-  flex-direction: row-reverse;
-  `
-}
-  `
+    flex-direction: row-reverse;
+  `}
+`;

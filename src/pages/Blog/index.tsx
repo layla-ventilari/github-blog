@@ -47,8 +47,11 @@ export function Blog() {
   return (
     <>
      <BlogContainer>
-      <HeroContainer>
-        <h1>Latest News</h1>
+     <HeroContainer>
+        <h1>Github Blog</h1>
+        <p>
+          Bem-vindo ao meu blog! Aqui compartilho notícias, dicas e insights sobre tecnologia, design e desenvolvimento.
+        </p>
       </HeroContainer>
 
     

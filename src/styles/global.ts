@@ -36,19 +36,78 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 160%; /* Espaçamento entre linhas */
   }
 
-  body, input, textarea, button {
-    font: 400 ${(props) => props.theme.textSizes["text-text-m"]} 'Nunito', sans-serif;
+  /* Estilização de títulos com gradiente */
+  h1, h2, h3, h4, h5, h6 {
+    background: linear-gradient(
+      135deg,
+      ${({ theme }) => theme.colors["blue-500"]}, /* Azul */
+      ${({ theme }) => theme.colors["lavender-500"]}, /* Lavanda */
+      ${({ theme }) => theme.colors["lavender-700"]} /* Lavanda mais escuro */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem; /* Espaçamento abaixo dos títulos */
   }
 
-  ul {
-    list-style: none;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
   }
 
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  /* Estilização de parágrafos e textos comuns */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: ${({ theme }) => theme.colors["base-text"]};
+    margin-bottom: 1rem;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  /* Links */
   a {
-    color: inherit;
+    color: ${({ theme }) => theme.colors["blue-500"]}; /* Azul para links */
     text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: ${({ theme }) => theme.colors["lavender-500"]}; /* Lavanda ao passar o mouse */
+    }
   }
 
+  /* Botões */
   button {
     cursor: pointer;
     background: linear-gradient(
@@ -73,6 +132,7 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
+  /* Inputs */
   input {
     border-radius: 1.6rem;
     width: 100%;
@@ -105,7 +165,7 @@ export const GlobalStyles = createGlobalStyle`
           ${({ theme }) => theme.colors["lavender-600"]}, /* Lavanda mais escuro */
           ${({ theme }) => theme.colors["lavender-800"]} /* Lavanda bem escuro */
         );
-      outline: none; 
+      outline: none; /* Remove o outline padrão */
     }
 
     &::placeholder {

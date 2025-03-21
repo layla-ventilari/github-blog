@@ -12,6 +12,8 @@ export const defaultTheme = {
     "base-subtitle": "#1F2A38", // Cinza mais escuro para subtítulos
     "base-title": "#0A1420", // Quase preto para títulos
 
+    "blue-500": "#1E6F9F", // Azul principal
+    "blue-600": "#1B4D73", // Azul mais escuro
     // Cores de lavanda (violeta)
     "lavender-100": "#ECE6F5", // Lavanda claro
     "lavender-200": "#D9CCEB", // Lavanda suave

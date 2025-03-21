@@ -50,7 +50,7 @@ export function Blog() {
      <HeroContainer>
         <h1>Github Blog</h1>
         <p>
-          Bem-vindo ao meu blog! Aqui compartilho notícias, dicas e insights sobre tecnologia, design e desenvolvimento.
+        Hey there! I'm Layla, a passionate front-end developer with a love for creating innovative and user-friendly web and mobile applications. With a background in English Literature and currently pursuing a degree in Systems Analysis and Development, I bring a unique blend of creativity and technical expertise to my projects. My goal is to leverage software development with AI integration to deliver modern and impactful solutions.
         </p>
       </HeroContainer>
 

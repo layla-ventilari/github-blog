@@ -1,5 +1,23 @@
 import styled from "styled-components";
 
+// Hero Container
+export const HeroContainer = styled.section`
+  background: ${(props) => props.theme.colors["base-background"]}; /
+  color: ${(props) => props.theme.colors["gray-900"]}; 
+  text-align: center;
+  padding: 4rem 1rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    font-family: "Nunito", sans-serif; // Alinhado com o restante do layout
+    color: ${(props) => props.theme.colors["base-title"]}; // Cor do título
+  }
+`;
+
+// Post List Container
 export const PostListContainer = styled.section`
   width: 100%;
   max-width: 1440px;
@@ -8,9 +26,10 @@ export const PostListContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
   gap: 2rem;
-  background: transparent; // Usa o fundo do body (#FFFFFF)
+  background: transparent;
 `;
 
+// Post Container
 export const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -20,7 +39,7 @@ export const PostContainer = styled.div`
   border: 1px solid ${(props) => props.theme.colors["base-border"]}; // #DDE3E8
   border-radius: 8px;
   text-decoration: none;
-  color: ${(props) => props.theme.colors["blue-600"]}; 
+  color: ${(props) => props.theme.colors["blue-600"]};
   transition: background 0.2s ease;
 
   &:hover {
@@ -51,7 +70,7 @@ export const PostContainer = styled.div`
     font-family: "Nunito", sans-serif;
     font-size: ${(props) => props.theme.textSizes["text-text-m"]}; // 1rem
     color: ${(props) => props.theme.colors["base-text"]}; // #333F4D
-    line-height: 1.6; 
+    line-height: 1.6;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;

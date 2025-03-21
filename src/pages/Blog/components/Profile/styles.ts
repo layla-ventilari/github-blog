@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ProfileContainer = styled.section`
-  width: 100vw; 
   max-width: 100%; 
   padding: 2rem; 
   display: flex;

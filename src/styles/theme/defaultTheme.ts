@@ -12,8 +12,11 @@ export const defaultTheme = {
     "base-subtitle": "#1F2A38", // Cinza mais escuro para subtítulos
     "base-title": "#0A1420", // Quase preto para títulos
 
+    "blue-200": "#a0c4ff", // Azul claro
+    "blue-300": "#89c2d9", // Azul suave
     "blue-500": "#1E6F9F", // Azul principal
     "blue-600": "#1B4D73", // Azul mais escuro
+
     // Cores de lavanda (violeta)
     "lavender-100": "#ECE6F5", // Lavanda claro
     "lavender-200": "#D9CCEB", // Lavanda suave
@@ -24,6 +27,9 @@ export const defaultTheme = {
     "lavender-700": "#593B82", // Lavanda escuro
     "lavender-800": "#422C66", // Lavanda bem escuro
     "lavender-900": "#2B1D4A", // Lavanda quase preto
+
+    "gray-600": "#6c757d", // Cinza médio
+    "gray-900": "#343a40", // Cinza escuro
   },
   textSizes: {
     "title-title-l": "1.5rem",

@@ -8,7 +8,7 @@ import { Spinner } from "../../../../components/Spinner";
 
 const username = import.meta.env.VITE_GITHUB_USERNAME;
 
-interface ProfileData {
+export interface ProfileData {
   login: string;
   bio: string;
   avatar_url: string;

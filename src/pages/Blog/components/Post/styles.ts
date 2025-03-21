@@ -3,45 +3,47 @@ import styled from "styled-components";
 
 export const PostContainer = styled(Link)`
   width: 100%;
-  height: 16.25rem;
+  height: auto;
   border-radius: 10px;
-  background: ${({ theme }) => theme.colors["base-post"]}; // #FAFAFA
-  border: 2px solid ${({ theme }) => theme.colors["base-border"]}; // #DDE3E8
-  padding: 2rem;
-  transition: 0.4s;
+  padding: 1.5rem;
+  background: ${({ theme }) => theme.colors["base-post"]};
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease;
 
   &:hover {
-    border-color: ${({ theme }) => theme.colors["base-label"]}; // #7A8794
+    background: ${({ theme }) => theme.colors["base-profile"]};
   }
 
   div {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
 
     strong {
       flex: 1;
-      font-size: ${({ theme }) => theme.textSizes["title-title-m"]}; // 1.25rem
-      color: ${({ theme }) => theme.colors["blue-600"]}; // #CCE1F5
+      font-size: ${({ theme }) => theme.textSizes["title-title-m"]};
+      color: ${({ theme }) => theme.colors["base-title"]};
+      line-height: 1.6;
     }
 
     span {
       width: max-content;
-      font-size: ${({ theme }) => theme.textSizes["text-text-s"]}; // 0.875rem
-      color: ${({ theme }) => theme.colors["base-span"]}; // 
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
+      font-size: ${({ theme }) => theme.textSizes["text-text-s"]};
+      color: ${({ theme }) => theme.colors["base-span"]};
+      white-space: nowrap;
     }
   }
 
   p {
+    font-size: ${({ theme }) => theme.textSizes["text-text-m"]};
+    color: ${({ theme }) => theme.colors["base-text"]};
+    line-height: 1.6;
+    margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
   }
 `;

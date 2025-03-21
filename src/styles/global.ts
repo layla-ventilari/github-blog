@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import firaCode from "../assets/fonts/FiraCode-Regular.woff";
-import headerBg from "../assets/bg-light.svg";
 
 export const GlobalStyles = createGlobalStyle`
   @font-face {

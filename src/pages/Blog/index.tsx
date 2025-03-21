@@ -4,7 +4,7 @@ import { api } from "../../lib/axios";
 import { Post } from "./components/Post";
 import { Profile } from "./components/Profile";
 import { SearchInput } from "./components/SearchInput";
-import { PostListContainer, HeroContainer } from "./styles"; 
+import { PostListContainer, HeroContainer, BlogContainer } from "./styles"; 
 
 const username = import.meta.env.VITE_GITHUB_USERNAME;
 const repoName = import.meta.env.VITE_GITHUB_REPONAME;
@@ -25,7 +25,6 @@ export function Blog() {
   const [posts, setPosts] = useState<IPost[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Função para buscar posts
   const getPosts = useCallback(async (query: string = "") => {
     try {
       setIsLoading(true);
@@ -47,7 +46,7 @@ export function Blog() {
 
   return (
     <>
-      {/* Hero Section */}
+     <BlogContainer>
       <HeroContainer>
         <h1>Latest News</h1>
       </HeroContainer>
@@ -65,6 +64,7 @@ export function Blog() {
       )}
        {/* Perfil */}
        <Profile />
+       </BlogContainer>
     </>
   );
 }
